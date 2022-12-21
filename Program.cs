@@ -34,15 +34,13 @@ namespace Ch16_AddressBook
 
         public class AddressBook
         {
-            // todo*: make contact dictionary that expects a key of a string & a Value of a string
-            Dictionary<string, Contact> contacts = new Dictionary<string, Contact>();
 
             // todo: make AddContact method to add contacts to address book
             //todo: what does void mean/do here?
-            public void AddContact(Contact contact)
-            {
-                this.Add(contact); //? how do i get this to .add to addressbook?
-            }
+            // public static void AddContact(string email, Contact contact)
+            // {
+            //     addressBook.Add(contact.Email, contact); //? how do i get this to .add to addressbook?
+            // }
 
             //todo: add GetByEmail method 
         }
@@ -52,6 +50,8 @@ namespace Ch16_AddressBook
         static void Main(string[] args)
         {
 
+            // todo*: make contact dictionary that expects a key of a string & a Value of a string
+            Dictionary<string, Contact> contacts = new Dictionary<string, Contact>();
 
 
             // Create a few contacts
@@ -81,7 +81,7 @@ namespace Ch16_AddressBook
 
             // Create an AddressBook and add some contacts to it
             AddressBook addressBook = new AddressBook();
-            addressBook.AddContact(bob);
+            addressBook.Add(bob);
             addressBook.AddContact(sue);
             addressBook.AddContact(juan);
 
@@ -105,7 +105,7 @@ namespace Ch16_AddressBook
             {
                 Contact contact = addressBook.GetByEmail(email);
                 Console.WriteLine("----------------------------");
-                Console.WriteLine($"Name: {contact.FullName}");
+                Console.WriteLine($"Name: {contact.FullName}"); //? should I make a method to crethe a last name property in contact instances?
                 Console.WriteLine($"Email: {contact.Email}");
                 Console.WriteLine($"Address: {contact.Address}");
             }
