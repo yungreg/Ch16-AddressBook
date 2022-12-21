@@ -1,0 +1,5 @@
+C:\Users\rlumr\workspace\csharp\book-1\Ch16-AddressBook\obj\Debug\net5.0\Ch16-AddressBook.csproj.AssemblyReference.cache
+C:\Users\rlumr\workspace\csharp\book-1\Ch16-AddressBook\obj\Debug\net5.0\Ch16-AddressBook.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rlumr\workspace\csharp\book-1\Ch16-AddressBook\obj\Debug\net5.0\Ch16-AddressBook.AssemblyInfoInputs.cache
+C:\Users\rlumr\workspace\csharp\book-1\Ch16-AddressBook\obj\Debug\net5.0\Ch16-AddressBook.AssemblyInfo.cs
+C:\Users\rlumr\workspace\csharp\book-1\Ch16-AddressBook\obj\Debug\net5.0\Ch16-AddressBook.csproj.CoreCompileInputs.cache

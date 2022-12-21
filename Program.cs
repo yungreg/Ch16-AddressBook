@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Ch16_AddressBook
 {
@@ -13,9 +14,46 @@ namespace Ch16_AddressBook
             3. Add try/catch blocks in the appropriate locations to prevent the program from crashing
                 Print meaningful error messages in the catch blocks.
         */
+        /*
+        *todo: create using statrement for teh list from generics
+        todo: create contact class
+        *todo: create address book class 
+        todo: make AddContact method to add contatcts to address book
+        */
+
+        //todo*: create contact class
+        public class Contact
+        {
+            public string FirstName { get; set; }
+            public string LastName { get; set; }
+            public string Email { get; set; }
+            public string Address { get; set; }
+        }
+
+        //todo*: create address book class 
+
+        public class AddressBook
+        {
+            // todo*: make contact dictionary that expects a key of a string & a Value of a string
+            Dictionary<string, Contact> contacts = new Dictionary<string, Contact>();
+
+            // todo: make AddContact method to add contacts to address book
+            //todo: what does void mean/do here?
+            public void AddContact(Contact contact)
+            {
+                this.Add(contact); //? how do i get this to .add to addressbook?
+            }
+
+            //todo: add GetByEmail method 
+        }
+
+
 
         static void Main(string[] args)
         {
+
+
+
             // Create a few contacts
             Contact bob = new Contact()
             {
@@ -40,13 +78,14 @@ namespace Ch16_AddressBook
             };
 
 
+
             // Create an AddressBook and add some contacts to it
             AddressBook addressBook = new AddressBook();
             addressBook.AddContact(bob);
             addressBook.AddContact(sue);
             addressBook.AddContact(juan);
 
-            // Try to addd a contact a second time
+            // Try to add a contact a second time
             addressBook.AddContact(sue);
 
 
@@ -73,3 +112,4 @@ namespace Ch16_AddressBook
         }
     }
 }
+
