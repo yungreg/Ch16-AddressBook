@@ -29,9 +29,6 @@ namespace Ch16_AddressBook
         static void Main(string[] args)
         {
 
-
-
-
             // Create a few contacts
             Contact bob = new Contact()
             {
@@ -56,16 +53,15 @@ namespace Ch16_AddressBook
             };
 
 
-            // todo*: make contact dictionary called AddressBook that expects a key of a string & a Value of a Contact
-            // Dictionary<string, Contact> AddressBook = new Dictionary<string, Contact>();
             // Create an AddressBook and add some contacts to it
             AddressBook addressBook1 = new AddressBook("Address Book 1");
-            addressBook1.Contacts.AddContact(sue);
-            addressBook1.Contacts.AddContact(bob);
-            addressBook1.Contacts.AddContact(juan);
+            addressBook1.Contacts.Add(sue);
+            addressBook1.Contacts.Add(bob);
+            addressBook1.Contacts.Add(juan);
 
-            addressBook1.ListContacts();
+            // listedContacts = addressBook1.ListContacts();
 
+            Console.Write(addressBook1.Ch_16_AddressBook.AddressBook.addressBook1.ListContacts()); //! how is this still so wrong? 
             // Try to add a contact a second time
             // addressBook.AddContact(sue);
 

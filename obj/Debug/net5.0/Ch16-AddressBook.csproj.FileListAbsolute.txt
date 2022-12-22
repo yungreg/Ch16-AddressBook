@@ -3,3 +3,14 @@ C:\Users\rlumr\workspace\csharp\book-1\Ch16-AddressBook\obj\Debug\net5.0\Ch16-Ad
 C:\Users\rlumr\workspace\csharp\book-1\Ch16-AddressBook\obj\Debug\net5.0\Ch16-AddressBook.AssemblyInfoInputs.cache
 C:\Users\rlumr\workspace\csharp\book-1\Ch16-AddressBook\obj\Debug\net5.0\Ch16-AddressBook.AssemblyInfo.cs
 C:\Users\rlumr\workspace\csharp\book-1\Ch16-AddressBook\obj\Debug\net5.0\Ch16-AddressBook.csproj.CoreCompileInputs.cache
+C:\Users\rlumr\workspace\csharp\book-1\Ch16-AddressBook\bin\Debug\net5.0\Ch16-AddressBook.exe
+C:\Users\rlumr\workspace\csharp\book-1\Ch16-AddressBook\bin\Debug\net5.0\Ch16-AddressBook.deps.json
+C:\Users\rlumr\workspace\csharp\book-1\Ch16-AddressBook\bin\Debug\net5.0\Ch16-AddressBook.runtimeconfig.json
+C:\Users\rlumr\workspace\csharp\book-1\Ch16-AddressBook\bin\Debug\net5.0\Ch16-AddressBook.runtimeconfig.dev.json
+C:\Users\rlumr\workspace\csharp\book-1\Ch16-AddressBook\bin\Debug\net5.0\Ch16-AddressBook.dll
+C:\Users\rlumr\workspace\csharp\book-1\Ch16-AddressBook\bin\Debug\net5.0\ref\Ch16-AddressBook.dll
+C:\Users\rlumr\workspace\csharp\book-1\Ch16-AddressBook\bin\Debug\net5.0\Ch16-AddressBook.pdb
+C:\Users\rlumr\workspace\csharp\book-1\Ch16-AddressBook\obj\Debug\net5.0\Ch16-AddressBook.dll
+C:\Users\rlumr\workspace\csharp\book-1\Ch16-AddressBook\obj\Debug\net5.0\ref\Ch16-AddressBook.dll
+C:\Users\rlumr\workspace\csharp\book-1\Ch16-AddressBook\obj\Debug\net5.0\Ch16-AddressBook.pdb
+C:\Users\rlumr\workspace\csharp\book-1\Ch16-AddressBook\obj\Debug\net5.0\Ch16-AddressBook.genruntimeconfig.cache
