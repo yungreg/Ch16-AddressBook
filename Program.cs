@@ -22,36 +22,14 @@ namespace Ch16_AddressBook
         */
 
         //todo*: create contact class
-        public class Contact
-        {
-            public string FirstName { get; set; }
-            public string LastName { get; set; }
-            public string Email { get; set; }
-            public string Address { get; set; }
-        }
 
         //todo*: create address book class 
-
-        public class AddressBook
-        {
-
-            // todo: make AddContact method to add contacts to address book
-            //todo: what does void mean/do here?
-            // public static void AddContact(string email, Contact contact)
-            // {
-            //     addressBook.Add(contact.Email, contact); //? how do i get this to .add to addressbook?
-            // }
-
-            //todo: add GetByEmail method 
-        }
-
 
 
         static void Main(string[] args)
         {
 
-            // todo*: make contact dictionary that expects a key of a string & a Value of a string
-            Dictionary<string, Contact> contacts = new Dictionary<string, Contact>();
+
 
 
             // Create a few contacts
@@ -78,37 +56,40 @@ namespace Ch16_AddressBook
             };
 
 
-
+            // todo*: make contact dictionary called AddressBook that expects a key of a string & a Value of a Contact
+            // Dictionary<string, Contact> AddressBook = new Dictionary<string, Contact>();
             // Create an AddressBook and add some contacts to it
-            AddressBook addressBook = new AddressBook();
-            addressBook.Add(bob);
-            addressBook.AddContact(sue);
-            addressBook.AddContact(juan);
+            AddressBook addressBook1 = new AddressBook("Address Book 1");
+            addressBook1.Contacts.AddContact(sue);
+            addressBook1.Contacts.AddContact(bob);
+            addressBook1.Contacts.AddContact(juan);
+
+            addressBook1.ListContacts();
 
             // Try to add a contact a second time
-            addressBook.AddContact(sue);
+            // addressBook.AddContact(sue);
 
 
             // Create a list of emails that match our Contacts
-            List<string> emails = new List<string>() {
-            "sue.jones@email.com",
-            "juan.lopez@email.com",
-            "bob.smith@email.com",
-        };
+            //     List<string> emails = new List<string>() {
+            //     "sue.jones@email.com",
+            //     "juan.lopez@email.com",
+            //     "bob.smith@email.com",
+            // };
 
             // Insert an email that does NOT match a Contact
-            emails.Insert(1, "not.in.addressbook@email.com");
+            // emails.Insert(1, "not.in.addressbook@email.com");
 
 
             //  Search the AddressBook by email and print the information about each Contact
-            foreach (string email in emails)
-            {
-                Contact contact = addressBook.GetByEmail(email);
-                Console.WriteLine("----------------------------");
-                Console.WriteLine($"Name: {contact.FullName}"); //? should I make a method to crethe a last name property in contact instances?
-                Console.WriteLine($"Email: {contact.Email}");
-                Console.WriteLine($"Address: {contact.Address}");
-            }
+            // foreach (string email in emails)
+            // {
+            //     Contact contact = addressBook.GetByEmail(email);
+            //     Console.WriteLine("----------------------------");
+            //     Console.WriteLine($"Name: {contact.FirstName} {contact.LastName}"); //? should I make a method to crethe a last name property in contact instances?
+            //     Console.WriteLine($"Email: {contact.Email}");
+            //     Console.WriteLine($"Address: {contact.Address}");
+            // }
         }
     }
 }
